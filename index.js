@@ -77,6 +77,16 @@ async function handleAnswer(isCorrect) {
     }
 }
 
+function winner() {
+    console.clear();
+    const msg = `WEPAAAA!! Ganastes, ${playerName}!! \n $5`;
+
+    figlet(msg, (err, data) => {
+        console.log(gradient.pastel.multiline(data));
+    })
+}
+
 await welcome();
 await preguntaPorNombre();
 await pregunta1();
+await winner();
