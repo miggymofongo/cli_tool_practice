@@ -55,12 +55,12 @@ async function pregunta1() {
         message: 'Nohelymar nació en el año\n',
         choices: [
             '2000',
-            '1987',
+            '1998',
             '1993',
             '1999',
         ],
     });
-return handleAnswer(answer.pregunta_1 == 2000)
+return handleAnswer(answer.pregunta_1 == 1998)
 }
 
 
